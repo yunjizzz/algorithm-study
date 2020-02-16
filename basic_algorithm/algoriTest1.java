@@ -1,6 +1,4 @@
-package basic;
-
-import java.util.Stack;
+package basic_algorithm;
 
 public class algoriTest1 {
 public static void main(String[] args) {
