@@ -1,4 +1,4 @@
-package test;
+package study;
 
 public class Codility1 {
 
@@ -12,7 +12,7 @@ public class Codility1 {
 
 		System.out.println(result);
 	}
-		//¹®Á¦°¡ ¹¹´õ¶û.........¿Ö Ç®ÀÌ¸¸ÀÖÁö.. ³­ÀâÇØ....¤Ð ´Ù½ÃÇ®ÀÚ ÀÌ°Ç
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.........ï¿½ï¿½ Ç®ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½ï¿½.. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½....ï¿½ï¿½ ï¿½Ù½ï¿½Ç®ï¿½ï¿½ ï¿½Ì°ï¿½
 	    public static int solution(String N) {
 	    	int end = 0 ,start =0;
 	    	int b =0 , a=0;

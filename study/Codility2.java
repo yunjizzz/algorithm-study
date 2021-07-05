@@ -1,4 +1,4 @@
-package test;
+package study;
 
 public class Codility2 {
 

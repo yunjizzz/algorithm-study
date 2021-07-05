@@ -1,4 +1,4 @@
-package test;
+package study;
 import java.util.Hashtable;
 import java.util.function.Function;
 

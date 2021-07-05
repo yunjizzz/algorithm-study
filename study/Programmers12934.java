@@ -1,6 +1,5 @@
-package test;
+package study;
 
-import java.util.Arrays;
 
 /*
  * 
