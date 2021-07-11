@@ -1,6 +1,7 @@
 package study;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /*
 시저 암호
@@ -61,4 +62,5 @@ public class Programmers12926 {
 		}
 		return result;
 	}
+
 }
