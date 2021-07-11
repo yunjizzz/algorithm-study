@@ -40,6 +40,8 @@ public class Programmers81301 {
 
         String s = "23four5six7";
 
+
+
         System.out.println(solution(s));
     }
 
