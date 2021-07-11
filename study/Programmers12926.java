@@ -26,19 +26,39 @@ public class Programmers12926 {
 	public static void main(String[] args) {
 		
 		
-		String a = "AB";
-		int b = 25;
+		String a = "AB C z";
+		int b = 5;
 		String tmp = solution(a,b);
 		System.out.println(tmp);
 	}
 
 
 	/*
-	머리 안돌아가서 일단 쉬쟈..
 	* */
 	public static String solution(String str,int n) {
-		String rtnStr= "";
+		String result= "";
 
-		return rtnStr;
+		for(int i=0; i<str.length();i++) {
+			int tmp = str.charAt(i);
+			if(tmp == ' ') {
+				result += ' ';
+			}else {
+				int sum = 0;
+				int count = n%26;
+				if(tmp  >= 65 && tmp <=90){
+					sum = tmp + count;
+					if(sum > 90 ){
+						sum -=26;
+					}
+				}else if(tmp >=97 && tmp <=122){
+					sum = tmp + count;
+					if( sum > 122){
+						sum -=26;
+					}
+				}
+				result +=(char)sum;
+			}
+		}
+		return result;
 	}
 }
