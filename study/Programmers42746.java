@@ -22,13 +22,74 @@ numbers	return
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.TreeSet;
+
 
 public class Programmers42746 {
 
 	public String solution(int[] numbers) {
+		char max = 0;
+		int tmp = 0;
+		ArrayList<Integer> sameNums =new ArrayList<>();
 
+		for(int i =0; i < numbers.length-1; i++){
+			int countMin = i;
+			String a = ""+numbers[i];
+			for(int j=i+1;j < numbers.length; j++){
+				String b = "" + numbers[j];
+				if(a.charAt(0) < b.charAt(0)){
+					countMin = j;
+				}else if( a.charAt(0) == b.charAt(0)){
+					int count = 1;
+					while (Math.max(a.length(),b.length()) >= count){
+						try {
+							if (b.charAt(count) == a.charAt(count)) {
+								count++;
+								continue;
+							} else if (b.charAt(count) < a.charAt(count)) {
+								countMin = j;
+								break;
+							} else {
+								countMin = i;
+								break;
+							}
+						}catch(Exception e){
+							if(a.length() < b.length()) {
+								if(a.charAt(count-1) > b.charAt(count)){
+									countMin = i;
+								}else{
+									countMin = j;
+								}
+							}else{
+								if(a.charAt(count) < b.charAt(count-1)){
+									countMin = j;
+								}else{
+									countMin = i;
+								}
+							}
+							break;
+						}
+					}
+				}else{
+					continue;
+				}
+			}
+			tmp++;
+			swap(numbers,countMin,i);
+		}
+		String result = "";
+		for(int i : numbers){
+			System.out.println("i="+i);
+			result += ""+i;
+		}
+		return result;
+	}
 
-		return null;
+	private static void swap(int[] a, int i, int j) {
+		int temp = a[i];
+		a[i] = a[j];
+		a[j] = temp;
 	}
 
     /**
@@ -41,7 +102,7 @@ public class Programmers42746 {
 
 	@Test
 	public void checkResult() {
-		Assert.assertEquals("6210", solution(new int[]{6, 10, 2}));
+	//	Assert.assertEquals("6210", solution(new int[]{6, 10, 2}));
 		Assert.assertEquals("9534330", solution(new int[]{3, 30, 34, 5, 9}));
 	}
 }
