@@ -1,18 +1,31 @@
 package array_algorithm;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 /**
  * 단순 삽입 정렬
  *
  */
 public class InsertionSort {
 
-    public static int solution(int a,int b) {
-        if( b == 0) return a;
-        return solution(b,a%b);
+
+    public static void main(String[] args) {
+        int[] result = insertionSort(new int[]{123,48,987,654,4,3241,4,15,2,0});
+
+        for(int i : result){
+            System.out.print(i +",");
+        }
     }
 
+    public static int[] insertionSort(int[] a){
+        int length = a.length;
+        for(int i= 1; i <length; i ++ ){
+            int j;
+            int tmp = a[i];
+            for(j=i; j > 0 && a[j-1]> tmp; j--){
+                a[j] = a[j-1];
+            }
+            a[j] = tmp;
+        }
+        return a;
+    }
 }
 
