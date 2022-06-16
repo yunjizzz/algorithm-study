@@ -1,6 +1,6 @@
 
 
-class Programmers_77884{
+class Programmers77884{
     public static void main(String[] args) {
         solution(13,17 );
     }

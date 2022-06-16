@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.function.Consumer;
 
-class Programmers_92334{
+class Programmers92334{
     public static void main(String[] args) {
         String[] tmp = {"muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"};
         String[] user = {"muzi", "frodo", "apeach", "neo"};
