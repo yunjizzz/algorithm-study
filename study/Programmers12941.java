@@ -1,5 +1,9 @@
 package study;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 /*
  */
 public class Programmers12941 {
@@ -17,13 +21,17 @@ public class Programmers12941 {
 		int sumB = 0;
 		int minus = arrA.length - 1;
 
-		arrA = sort(arrA);
-		arrB = sort(arrB);
+		Arrays.sort(arrA);
+		Arrays.sort(arrB);
+
+		//arrA = sort(arrA);
+		//arrB = sort(arrB);
 
 		for (int i = 0; i < arrA.length; i++) {
 			sumA += arrA[i] * arrB[minus - i];
 			sumB += arrB[i] * arrA[minus - i];
 		}
+
 		return Math.min(sumA, sumB);
 	}
 
