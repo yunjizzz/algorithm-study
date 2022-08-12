@@ -16,16 +16,14 @@ public class Programmers12951 {
 	}
 
 	public static String solution(String str) {
-		str = str.toLowerCase();
-
-		String[] strs = str.split(" ");
 		StringBuilder sb = new StringBuilder();
-		for(String s : strs){
-			sb.append(Character.toUpperCase(s.charAt(0)));
-			sb.append(s.substring(1));
-			sb.append(" ");
+		boolean upperCaseMode = true;
+
+		for(String a : str.toLowerCase().split("")){
+			sb.append( upperCaseMode ? a.toUpperCase() : a);
+			upperCaseMode = a.equals(" ");
 		}
 
-		return sb.toString().trim();
+		return sb.toString();
 	}
 }
