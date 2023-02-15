@@ -1,21 +1,21 @@
 package study;
 
 /*
- * ¼­¿ï¿¡¼­ ±è¼­¹æ Ã£±â
+ * ì„œìš¸ì—ì„œ ê¹€ì„œë°© ì°¾ê¸°
  * 
-¹®Á¦ ¼³¸í
-StringÇü ¹è¿­ seoulÀÇ elementÁß KimÀÇ À§Ä¡ x¸¦ Ã£¾Æ, ±è¼­¹æÀº x¿¡ ÀÖ´Ù´Â StringÀ» ¹ÝÈ¯ÇÏ´Â ÇÔ¼ö, solutionÀ» ¿Ï¼ºÇÏ¼¼¿ä. seoul¿¡ KimÀº ¿ÀÁ÷ ÇÑ ¹ø¸¸ ³ªÅ¸³ª¸ç Àß¸øµÈ °ªÀÌ ÀÔ·ÂµÇ´Â °æ¿ì´Â ¾ø½À´Ï´Ù.
+ë¬¸ì œ ì„¤ëª…
+Stringí˜• ë°°ì—´ seoulì˜ elementì¤‘ Kimì˜ ìœ„ì¹˜ xë¥¼ ì°¾ì•„, ê¹€ì„œë°©ì€ xì— ìžˆë‹¤ëŠ” Stringì„ ë°˜í™˜í•˜ëŠ” í•¨ìˆ˜, solutionì„ ì™„ì„±í•˜ì„¸ìš”. seoulì— Kimì€ ì˜¤ì§ í•œ ë²ˆë§Œ ë‚˜íƒ€ë‚˜ë©° ìž˜ëª»ëœ ê°’ì´ ìž…ë ¥ë˜ëŠ” ê²½ìš°ëŠ” ì—†ìŠµë‹ˆë‹¤.
 
-Á¦ÇÑ »çÇ×
-seoulÀº ±æÀÌ 1 ÀÌ»ó, 1000 ÀÌÇÏÀÎ ¹è¿­ÀÔ´Ï´Ù.
-seoulÀÇ ¿ø¼Ò´Â ±æÀÌ 1 ÀÌ»ó, 20 ÀÌÇÏÀÎ ¹®ÀÚ¿­ÀÔ´Ï´Ù.
-KimÀº ¹Ýµå½Ã seoul ¾È¿¡ Æ÷ÇÔµÇ¾î ÀÖ½À´Ï´Ù.
-ÀÔÃâ·Â ¿¹
+ì œí•œ ì‚¬í•­
+seoulì€ ê¸¸ì´ 1 ì´ìƒ, 1000 ì´í•˜ì¸ ë°°ì—´ìž…ë‹ˆë‹¤.
+seoulì˜ ì›ì†ŒëŠ” ê¸¸ì´ 1 ì´ìƒ, 20 ì´í•˜ì¸ ë¬¸ìžì—´ìž…ë‹ˆë‹¤.
+Kimì€ ë°˜ë“œì‹œ seoul ì•ˆì— í¬í•¨ë˜ì–´ ìžˆìŠµë‹ˆë‹¤.
+ìž…ì¶œë ¥ ì˜ˆ
 seoul	return
-[Jane, Kim]	±è¼­¹æÀº 1¿¡ ÀÖ´Ù
+[Jane, Kim]	ê¹€ì„œë°©ì€ 1ì— ìžˆë‹¤
 */
 
-//¿¬½À¹®Á¦´Â ½±´Ù¾Ó ÁÁ´ç
+//ì—°ìŠµë¬¸ì œëŠ” ì‰½ë‹¤ì•™ ì¢‹ë‹¹
 public class Programmers12919 {
 
 	public String solution(String[] seoul) {
@@ -25,6 +25,6 @@ public class Programmers12919 {
 				x = i;
 			}
 		}
-		return "±è¼­¹æÀº " + x + "¿¡ ÀÖ´Ù";
+		return "ê¹€ì„œë°©ì€ " + x + "ì— ìžˆë‹¤";
 	}
 }

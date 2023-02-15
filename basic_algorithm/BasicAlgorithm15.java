@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class BasicAlgorithm15 {
 	
 	/*	
-	 * ±âÃÊ±âÃÊ
-	 * ÀÔ·ÂÇÑ ¼ö¸¦ ÇÑº¯À¸·Î ÇÏ´Â Á¤ »ç°¢ÇüÀ» *±âÈ£·Î Ãâ·ÂÇÏ½Ã¿À
-	 * ¿¹) 3
+	 * ê¸°ì´ˆê¸°ì´ˆ
+	 * ì…ë ¥í•œ ìˆ˜ë¥¼ í•œë³€ìœ¼ë¡œ í•˜ëŠ” ì • ì‚¬ê°í˜•ì„ *ê¸°í˜¸ë¡œ ì¶œë ¥í•˜ì‹œì˜¤
+	 * ì˜ˆ) 3
 	 * ***
 	 * ***
 	 * ***
-	 * ÀÌ·±½ÄÀ¸·Î!!
+	 * ì´ëŸ°ì‹ìœ¼ë¡œ!!
 	 * 
 	 */
 	public static void main(String[] args) {
@@ -19,9 +19,9 @@ public class BasicAlgorithm15 {
 		Scanner in =new Scanner(System.in);
 		
 		int a;
-		System.out.println("Á¤»ç°¢Çü º°Âï±â ½ÃÀÛ");
+		System.out.println("ì •ì‚¬ê°í˜• ë³„ì°ê¸° ì‹œì‘");
 		do {
-			System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä!~");
+			System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”!~");
 			a = in.nextInt();
 			
 		}while(a <0);
@@ -34,6 +34,6 @@ public class BasicAlgorithm15 {
 			System.out.println();
 		}	
 		
-		System.out.println("Á¤»ç°¢Çü³¡ ÁøÂ¥½±ÁÒÀ×");
+		System.out.println("ì •ì‚¬ê°í˜•ë ì§„ì§œì‰½ì£ ì‰");
 	}
 }

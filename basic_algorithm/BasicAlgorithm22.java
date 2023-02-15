@@ -3,21 +3,21 @@ package basic_algorithm;
 public class BasicAlgorithm22 {
 	
 	/*	
-	 * n´ÜÀÇ ÇÇ¶ó¹Ìµå¸¦ Ãâ·ÂÇÏ´Â ¸Þ¼­µå¸¦ ÀÛ¼ºÇÏ½Ã¿Ë!!!
-	 * ¿¹¸¦µé¾î 3´ÜÀÌ¸é ¾Æ·¡¿Í °°ÀÌ Ãâ·Â
+	 * në‹¨ì˜ í”¼ë¼ë¯¸ë“œë¥¼ ì¶œë ¥í•˜ëŠ” ë©”ì„œë“œë¥¼ ìž‘ì„±í•˜ì‹œì˜¹!!!
+	 * ì˜ˆë¥¼ë“¤ì–´ 3ë‹¨ì´ë©´ ì•„ëž˜ì™€ ê°™ì´ ì¶œë ¥
 	 *     1
 	 *   2 2 2
 	 * 3 3 3 3 3
 	 * 
 	 */
 	public static void main(String[] args) {
-		//99±îÁö¸¸ÇÏ¼¼¿ä¿À¿À¿Ë 100ºÎÅÍ ¶Ç ¿¹¿ÜÃ³¸®Ãß°¡ÇØ¾ß´ï
+		//99ê¹Œì§€ë§Œí•˜ì„¸ìš”ì˜¤ì˜¤ì˜¹ 100ë¶€í„° ë˜ ì˜ˆì™¸ì²˜ë¦¬ì¶”ê°€í•´ì•¼ëŒ
 		spira(12);
 		
-		System.out.println("¼ýÀÚ°¡ ³ª¿À´Â ÇÇ¶ó¹Ìµå¸¦ ±¸ÇöÇØ¶óÀ× ³¡~~! ÁøÂ¥½±ÁÒÀ×");
+		System.out.println("ìˆ«ìžê°€ ë‚˜ì˜¤ëŠ” í”¼ë¼ë¯¸ë“œë¥¼ êµ¬í˜„í•´ë¼ìž‰ ë~~! ì§„ì§œì‰½ì£ ìž‰");
 	}
 	
-	//ÇÇ¶ó¹Ìµå º°ÂïÀÌÀÌÀÌÀÌ!!!!!
+	//í”¼ë¼ë¯¸ë“œ ë³„ì°ì´ì´ì´ì´!!!!!
 	private static void spira(int n) {
 		int tmp= n;
 		

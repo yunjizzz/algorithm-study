@@ -3,20 +3,20 @@ package basic_algorithm;
 public class BasicAlgorithm18 {
 	
 	/*	
-	 * ¿ÞÂÊÀ§!!!!!!!
-	 * Á÷°¢ ÀÌµîº¯ »ï°¢Çü Ãâ·Â
-	 * ÀÌÁß·çÇÁ ÀÀ¿ë
-	 * Á÷°¢ ÀÌµîº¯ »ï°¢ÇüÀ» Ãâ·ÂÇÏ´Â ºÎºÐÀ» ¸Þ¼­µå Çü½ÄÀ¸·Î ÀÛ¼ºÇÏ¼¼¿ä!!!
+	 * ì™¼ìª½ìœ„!!!!!!!
+	 * ì§ê° ì´ë“±ë³€ ì‚¼ê°í˜• ì¶œë ¥
+	 * ì´ì¤‘ë£¨í”„ ì‘ìš©
+	 * ì§ê° ì´ë“±ë³€ ì‚¼ê°í˜•ì„ ì¶œë ¥í•˜ëŠ” ë¶€ë¶„ì„ ë©”ì„œë“œ í˜•ì‹ìœ¼ë¡œ ìž‘ì„±í•˜ì„¸ìš”!!!
 	 * 
 	 */
 	public static void main(String[] args) {
 		
 		triangleLU(7);
 		
-		System.out.println("¿ÞÂÊÀ§ Á÷°¢ »ï°¢Çü ³¡~~! ÁøÂ¥½±ÁÒÀ×");
+		System.out.println("ì™¼ìª½ìœ„ ì§ê° ì‚¼ê°í˜• ë~~! ì§„ì§œì‰½ì£ ìž‰");
 	}
 	
-	//¿ÞÂÊ À§°¡ Á÷°¢ÀÎ »ï°¢Çü ¸¸µé±â
+	//ì™¼ìª½ ìœ„ê°€ ì§ê°ì¸ ì‚¼ê°í˜• ë§Œë“¤ê¸°
 	private static void triangleLU(int n) {
 		for(int i=0; i<n; i++) {
 			System.out.printf("*");

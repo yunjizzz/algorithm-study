@@ -6,17 +6,17 @@ public class BasicAlgorithm8 {
 	
 
 	/*	
-	 * do while »ç¿ë¿¹½Ã 0º¸´Ù Å«°ªÀ» ÀÔ·ÂÇßÀ» ¶§¸¸
-	 * 1-n±îÁöÀÇ ÇÕÀ» ±¸ÇÑ´Ù.
+	 * do while ì‚¬ìš©ì˜ˆì‹œ 0ë³´ë‹¤ í°ê°’ì„ ì…ë ¥í–ˆì„ ë•Œë§Œ
+	 * 1-nê¹Œì§€ì˜ í•©ì„ êµ¬í•œë‹¤.
 	 */
 	public static void main(String[] args) {
 		Scanner in =new Scanner(System.in);
 		int n;
 		
-		System.out.println("1ºÎÅÍ n±îÁöÀÇ ÇÕÀ» ±¸ÇÔ");
+		System.out.println("1ë¶€í„° nê¹Œì§€ì˜ í•©ì„ êµ¬í•¨");
 		
 		do {
-			System.out.println("nÀÇ°ª");
+			System.out.println("nì˜ê°’");
 			n = in.nextInt();
 		}while(n<=0);
 		
@@ -24,7 +24,7 @@ public class BasicAlgorithm8 {
 		for(int i=1; i<=n; i++)
 			sum+=i;
 		
-		System.out.println("1ºÎÅÍ"+n+"±îÁöÀÇ ÇÕÀº" + sum + "ÀÔ´Ï´Ù.");
+		System.out.println("1ë¶€í„°"+n+"ê¹Œì§€ì˜ í•©ì€" + sum + "ì…ë‹ˆë‹¤.");
 	}
 	
 

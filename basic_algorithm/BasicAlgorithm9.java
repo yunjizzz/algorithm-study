@@ -6,27 +6,27 @@ public class BasicAlgorithm9 {
 	
 
 	/*	
-	 * µÎ ¼öÀÇ Â÷¸¦ ±¸ÇÑ´Ù.
-	 * Ã¹¹øÂ° ÀÔ·ÂÇÑ ¼ö´Â µÎ¹øÂ° ÀÔ·ÂÇÑ ¼öº¸´Ù ¹«Á¶°Ç Ä¿¾ßÇÑ´Ù!!
-	 * ±Â±Â
+	 * ë‘ ìˆ˜ì˜ ì°¨ë¥¼ êµ¬í•œë‹¤.
+	 * ì²«ë²ˆì§¸ ì…ë ¥í•œ ìˆ˜ëŠ” ë‘ë²ˆì§¸ ì…ë ¥í•œ ìˆ˜ë³´ë‹¤ ë¬´ì¡°ê±´ ì»¤ì•¼í•œë‹¤!!
+	 * êµ¿êµ¿
 	 */
 	public static void main(String[] args) {
 		Scanner in =new Scanner(System.in);
 		int a;
 		int b;
-		System.out.println("a¿Í bÀÇ ÇÕÀ» ±¸ÇÔ");
+		System.out.println("aì™€ bì˜ í•©ì„ êµ¬í•¨");
 		
 		do {
-			System.out.println("aÀÇ°ª");
+			System.out.println("aì˜ê°’");
 			a = in.nextInt();
 		}while(a<=0);
 		
 		do {
-			System.out.println("bÀÇ°ª");
+			System.out.println("bì˜ê°’");
 			b = in.nextInt();
 		}while(b<=a);
 		
-		System.out.println("µÎ¼öÀÇ Â÷´Â" + (b-a) + "ÀÔ´Ï´Ù.");
+		System.out.println("ë‘ìˆ˜ì˜ ì°¨ëŠ”" + (b-a) + "ì…ë‹ˆë‹¤.");
 	}
 	
 

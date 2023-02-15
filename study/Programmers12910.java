@@ -7,32 +7,32 @@ import java.util.Arrays;
 
 /*
  * 
- * ³ª´©¾î ¶³¾îÁö´Â ¼ýÀÚ ¹è¿­
+ * ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ëŠ” ìˆ«ìž ë°°ì—´
 
  * 
- ¹®Á¦ ¼³¸í
-arrayÀÇ °¢ element Áß divisor·Î ³ª´©¾î ¶³¾îÁö´Â °ªÀ» ¿À¸§Â÷¼øÀ¸·Î Á¤·ÄÇÑ ¹è¿­À» ¹ÝÈ¯ÇÏ´Â ÇÔ¼ö, solutionÀ» ÀÛ¼ºÇØÁÖ¼¼¿ä.
-divisor·Î ³ª´©¾î ¶³¾îÁö´Â element°¡ ÇÏ³ªµµ ¾ø´Ù¸é ¹è¿­¿¡ -1À» ´ã¾Æ ¹ÝÈ¯ÇÏ¼¼¿ä.
+ ë¬¸ì œ ì„¤ëª…
+arrayì˜ ê° element ì¤‘ divisorë¡œ ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ëŠ” ê°’ì„ ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì •ë ¬í•œ ë°°ì—´ì„ ë°˜í™˜í•˜ëŠ” í•¨ìˆ˜, solutionì„ ìž‘ì„±í•´ì£¼ì„¸ìš”.
+divisorë¡œ ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ëŠ” elementê°€ í•˜ë‚˜ë„ ì—†ë‹¤ë©´ ë°°ì—´ì— -1ì„ ë‹´ì•„ ë°˜í™˜í•˜ì„¸ìš”.
 
-Á¦ÇÑ»çÇ×
-arrÀº ÀÚ¿¬¼ö¸¦ ´ãÀº ¹è¿­ÀÔ´Ï´Ù.
-Á¤¼ö i, j¿¡ ´ëÇØ i ¡Á j ÀÌ¸é arr[i] ¡Á arr[j] ÀÔ´Ï´Ù.
-divisor´Â ÀÚ¿¬¼öÀÔ´Ï´Ù.
-array´Â ±æÀÌ 1 ÀÌ»óÀÎ ¹è¿­ÀÔ´Ï´Ù.
-ÀÔÃâ·Â ¿¹
+ì œí•œì‚¬í•­
+arrì€ ìžì—°ìˆ˜ë¥¼ ë‹´ì€ ë°°ì—´ìž…ë‹ˆë‹¤.
+ì •ìˆ˜ i, jì— ëŒ€í•´ i â‰  j ì´ë©´ arr[i] â‰  arr[j] ìž…ë‹ˆë‹¤.
+divisorëŠ” ìžì—°ìˆ˜ìž…ë‹ˆë‹¤.
+arrayëŠ” ê¸¸ì´ 1 ì´ìƒì¸ ë°°ì—´ìž…ë‹ˆë‹¤.
+ìž…ì¶œë ¥ ì˜ˆ
 arr	divisor	return
 [5, 9, 7, 10]	5	[5, 10]
 [2, 36, 1, 3]	1	[1, 2, 3, 36]
 [3,2,6]	10	[-1]
-ÀÔÃâ·Â ¿¹ ¼³¸í
-ÀÔÃâ·Â ¿¹#1
-arrÀÇ ¿ø¼Ò Áß 5·Î ³ª´©¾î ¶³¾îÁö´Â ¿ø¼Ò´Â 5¿Í 10ÀÔ´Ï´Ù. µû¶ó¼­ [5, 10]À» ¸®ÅÏÇÕ´Ï´Ù.
+ìž…ì¶œë ¥ ì˜ˆ ì„¤ëª…
+ìž…ì¶œë ¥ ì˜ˆ#1
+arrì˜ ì›ì†Œ ì¤‘ 5ë¡œ ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ëŠ” ì›ì†ŒëŠ” 5ì™€ 10ìž…ë‹ˆë‹¤. ë”°ë¼ì„œ [5, 10]ì„ ë¦¬í„´í•©ë‹ˆë‹¤.
 
-ÀÔÃâ·Â ¿¹#2
-arrÀÇ ¸ðµç ¿ø¼Ò´Â 1À¸·Î ³ª´©¾î ¶³¾îÁý´Ï´Ù. ¿ø¼Ò¸¦ ¿À¸§Â÷¼øÀ¸·Î Á¤·ÄÇØ [1, 2, 3, 36]À» ¸®ÅÏÇÕ´Ï´Ù.
+ìž…ì¶œë ¥ ì˜ˆ#2
+arrì˜ ëª¨ë“  ì›ì†ŒëŠ” 1ìœ¼ë¡œ ë‚˜ëˆ„ì–´ ë–¨ì–´ì§‘ë‹ˆë‹¤. ì›ì†Œë¥¼ ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì •ë ¬í•´ [1, 2, 3, 36]ì„ ë¦¬í„´í•©ë‹ˆë‹¤.
 
-ÀÔÃâ·Â ¿¹#3
-3, 2, 6Àº 10À¸·Î ³ª´©¾î ¶³¾îÁöÁö ¾Ê½À´Ï´Ù. ³ª´©¾î ¶³¾îÁö´Â ¿ø¼Ò°¡ ¾øÀ¸¹Ç·Î [-1]À» ¸®ÅÏÇÕ´Ï´Ù.
+ìž…ì¶œë ¥ ì˜ˆ#3
+3, 2, 6ì€ 10ìœ¼ë¡œ ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ì§€ ì•ŠìŠµë‹ˆë‹¤. ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ëŠ” ì›ì†Œê°€ ì—†ìœ¼ë¯€ë¡œ [-1]ì„ ë¦¬í„´í•©ë‹ˆë‹¤.
 
  
  */
@@ -48,16 +48,16 @@ public class Programmers12910 {
 	}
 	
 	public static int[] solution(int[] arr,int divisor) {
-		// ¸ÕÀú ¿À¸§Â÷¼øÀ¸·Î Á¤·Ä
+		// ë¨¼ì € ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì •ë ¬
 		Arrays.sort(arr);
 		
-		//³ª´©´Â ¼ö°¡ 1ÀÌ¸é ±×´ë·Î return
+		//ë‚˜ëˆ„ëŠ” ìˆ˜ê°€ 1ì´ë©´ ê·¸ëŒ€ë¡œ return
 		if(divisor==1){
 			return arr;
 		}
 		ArrayList<Integer> lists = new ArrayList<Integer>();
 
-		// ³ª´©¾î Áö´Â °Å¸¸ Ãß°¡ÇÏ±â
+		// ë‚˜ëˆ„ì–´ ì§€ëŠ” ê±°ë§Œ ì¶”ê°€í•˜ê¸°
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] % divisor == 0) {
 				lists.add(arr[i]);
@@ -66,17 +66,17 @@ public class Programmers12910 {
 			}
 		}
 
-		// ³ª´©¾î Áö´Â°Ô ¾øÀ¸¸é -1 ¸®ÅÏ
+		// ë‚˜ëˆ„ì–´ ì§€ëŠ”ê²Œ ì—†ìœ¼ë©´ -1 ë¦¬í„´
 		if (lists.size() == 0) {
 			return new int[] { -1 };
 		} else {
-			// ¾Æ´Ò °æ¿ì´Â set¸¸Å­ ¹è¿­ ¸¸µç ÈÄ ³²¾Æ¼­ ¸®ÅÏ
+			// ì•„ë‹ ê²½ìš°ëŠ” setë§Œí¼ ë°°ì—´ ë§Œë“  í›„ ë‚¨ì•„ì„œ ë¦¬í„´
 			int[] retArr = new int[lists.size()];
 			int count = 0;
 			for (int num : lists) {
 				retArr[count++] = num;
 			}
-			// ³¡~~~!
+			// ë~~~!
 			return retArr;
 		}
 	}

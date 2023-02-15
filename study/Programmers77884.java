@@ -1,4 +1,4 @@
-
+package study;
 
 class Programmers77884{
     public static void main(String[] args) {

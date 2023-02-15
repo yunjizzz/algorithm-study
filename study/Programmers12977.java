@@ -1,27 +1,27 @@
 package study;
 
 /*
-¼Ò¼ö ¸¸µé±â
-¹®Á¦ ¼³¸í
-ÁÖ¾îÁø ¼ýÀÚ Áß 3°³ÀÇ ¼ö¸¦ ´õÇßÀ» ¶§ ¼Ò¼ö°¡ µÇ´Â °æ¿ìÀÇ °³¼ö¸¦ ±¸ÇÏ·Á°í ÇÕ´Ï´Ù. ¼ýÀÚµéÀÌ µé¾îÀÖ´Â ¹è¿­ nums°¡ ¸Å°³º¯¼ö·Î ÁÖ¾îÁú ¶§, nums¿¡ ÀÖ´Â ¼ýÀÚµé Áß ¼­·Î ´Ù¸¥ 3°³¸¦ °ñ¶ó ´õÇßÀ» ¶§ ¼Ò¼ö°¡ µÇ´Â °æ¿ìÀÇ °³¼ö¸¦ return ÇÏµµ·Ï solution ÇÔ¼ö¸¦ ¿Ï¼ºÇØÁÖ¼¼¿ä.
+ì†Œìˆ˜ ë§Œë“¤ê¸°
+ë¬¸ì œ ì„¤ëª…
+ì£¼ì–´ì§„ ìˆ«ìž ì¤‘ 3ê°œì˜ ìˆ˜ë¥¼ ë”í–ˆì„ ë•Œ ì†Œìˆ˜ê°€ ë˜ëŠ” ê²½ìš°ì˜ ê°œìˆ˜ë¥¼ êµ¬í•˜ë ¤ê³  í•©ë‹ˆë‹¤. ìˆ«ìžë“¤ì´ ë“¤ì–´ìžˆëŠ” ë°°ì—´ numsê°€ ë§¤ê°œë³€ìˆ˜ë¡œ ì£¼ì–´ì§ˆ ë•Œ, numsì— ìžˆëŠ” ìˆ«ìžë“¤ ì¤‘ ì„œë¡œ ë‹¤ë¥¸ 3ê°œë¥¼ ê³¨ë¼ ë”í–ˆì„ ë•Œ ì†Œìˆ˜ê°€ ë˜ëŠ” ê²½ìš°ì˜ ê°œìˆ˜ë¥¼ return í•˜ë„ë¡ solution í•¨ìˆ˜ë¥¼ ì™„ì„±í•´ì£¼ì„¸ìš”.
 
-Á¦ÇÑ»çÇ×
-nums¿¡ µé¾îÀÖ´Â ¼ýÀÚÀÇ °³¼ö´Â 3°³ ÀÌ»ó 50°³ ÀÌÇÏÀÔ´Ï´Ù.
-numsÀÇ °¢ ¿ø¼Ò´Â 1 ÀÌ»ó 1,000 ÀÌÇÏÀÇ ÀÚ¿¬¼öÀÌ¸ç, Áßº¹µÈ ¼ýÀÚ°¡ µé¾îÀÖÁö ¾Ê½À´Ï´Ù.
-ÀÔÃâ·Â ¿¹
+ì œí•œì‚¬í•­
+numsì— ë“¤ì–´ìžˆëŠ” ìˆ«ìžì˜ ê°œìˆ˜ëŠ” 3ê°œ ì´ìƒ 50ê°œ ì´í•˜ìž…ë‹ˆë‹¤.
+numsì˜ ê° ì›ì†ŒëŠ” 1 ì´ìƒ 1,000 ì´í•˜ì˜ ìžì—°ìˆ˜ì´ë©°, ì¤‘ë³µëœ ìˆ«ìžê°€ ë“¤ì–´ìžˆì§€ ì•ŠìŠµë‹ˆë‹¤.
+ìž…ì¶œë ¥ ì˜ˆ
 nums	result
 [1,2,3,4]	1
 [1,2,7,6,4]	4
 
-¼öÇÐ Àß ¸ð¸£´Â ³ª´Â Çì¸Ç ¹®Á¦ÀÓ..
-¼Ò¼öÀÇ Á¶°Ç Àß È®ÀÎÇÏÀÚ!
+ìˆ˜í•™ ìž˜ ëª¨ë¥´ëŠ” ë‚˜ëŠ” í—¤ë§¨ ë¬¸ì œìž„..
+ì†Œìˆ˜ì˜ ì¡°ê±´ ìž˜ í™•ì¸í•˜ìž!
 */
 public class Programmers12977 {
 
     public static void main(String[] args) {
 
         int[] nums = {1,2,3,4};
-        //then °á°ú´Â 1 ³ª¿Í¾ßÇÔ
+        //then ê²°ê³¼ëŠ” 1 ë‚˜ì™€ì•¼í•¨
         System.out.println(solution(nums));
     }
 
@@ -31,7 +31,7 @@ public class Programmers12977 {
             for(int j=i+1; j< nums.length; j++){
                 for(int k=j+2; k< nums.length; k++){
                     int sum = (nums[i] + nums[j] + nums[k]);
-                    // ¼Ò¼ö ÆÇº°
+                    // ì†Œìˆ˜ íŒë³„
                     boolean isPrime = true;
                     for(int a=2; a<sum; a++) {
                         if(sum%a == 0) {

@@ -7,7 +7,7 @@ public class Yunji {
   
 	public static void main(String[] args) {
 		
-		System.out.print("´äÀº" + solution("ababcdcdababcdcd"));
+		System.out.print("ë‹µì€" + solution("ababcdcdababcdcd"));
 	}
 	
 	

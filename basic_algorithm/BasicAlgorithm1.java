@@ -12,8 +12,8 @@ public class BasicAlgorithm1 {
 	}
 	
 /*	
- * ¼¼Á¤¼öÀÇ °¡Àå Å« °ª ±¸ÇÏ±â
- * ¸Å---------¿ì ±âÃÊ
+ * ì„¸ì •ìˆ˜ì˜ ê°€ì¥ í° ê°’ êµ¬í•˜ê¸°
+ * ë§¤---------ìš° ê¸°ì´ˆ
 */	
 	public static int solution(int a, int b, int c) {
 		int tmp = a;

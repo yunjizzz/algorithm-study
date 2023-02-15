@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class BasicAlgorithm10 {
 	
 	/*	
-	 * ¾çÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ°í ÀÚ¸´¼ö¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ¼¼¿ä
-	 * ¿¹¸¦µé¾î 135 ÀÌ¸é 3À» Ãâ·Â 12345 ÀÌ¸é 5¸¦ Ãâ·Â
+	 * ì–‘ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ê³  ìë¦¿ìˆ˜ë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì„¸ìš”
+	 * ì˜ˆë¥¼ë“¤ì–´ 135 ì´ë©´ 3ì„ ì¶œë ¥ 12345 ì´ë©´ 5ë¥¼ ì¶œë ¥
 	 * 
 	 */
 	public static void main(String[] args) {
 		Scanner in =new Scanner(System.in);
 		
-		System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		int a = in.nextInt();
 		int i=0;
 		do {
@@ -20,7 +20,7 @@ public class BasicAlgorithm10 {
 			i++;
 		}while(a>0);
 		
-		System.out.println("ÀÔ·ÂÇÑ ÀÚ¸´¼ö´Â " + i + "ÀÔ´Ï´Ù.");
+		System.out.println("ì…ë ¥í•œ ìë¦¿ìˆ˜ëŠ” " + i + "ì…ë‹ˆë‹¤.");
 	}
 	
 

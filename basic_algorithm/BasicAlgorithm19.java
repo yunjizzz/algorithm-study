@@ -3,20 +3,20 @@ package basic_algorithm;
 public class BasicAlgorithm19 {
 	
 	/*	
-	 * ¿À¸¥ÂÊÀ§!!!!!!!
-	 * Á÷°¢ ÀÌµîº¯ »ï°¢Çü Ãâ·Â
-	 * ÀÌÁß·çÇÁ ÀÀ¿ë
-	 * Á÷°¢ ÀÌµîº¯ »ï°¢ÇüÀ» Ãâ·ÂÇÏ´Â ºÎºÐÀ» ¸Þ¼­µå Çü½ÄÀ¸·Î ÀÛ¼ºÇÏ¼¼¿ä!!!
+	 * ì˜¤ë¥¸ìª½ìœ„!!!!!!!
+	 * ì§ê° ì´ë“±ë³€ ì‚¼ê°í˜• ì¶œë ¥
+	 * ì´ì¤‘ë£¨í”„ ì‘ìš©
+	 * ì§ê° ì´ë“±ë³€ ì‚¼ê°í˜•ì„ ì¶œë ¥í•˜ëŠ” ë¶€ë¶„ì„ ë©”ì„œë“œ í˜•ì‹ìœ¼ë¡œ ìž‘ì„±í•˜ì„¸ìš”!!!
 	 * 
 	 */
 	public static void main(String[] args) {
 		
 		triangleRU(7);
 		
-		System.out.println("¿À¸¥ÂÊÀ§ Á÷°¢ »ï°¢Çü ³¡~~! ÁøÂ¥½±ÁÒÀ×");
+		System.out.println("ì˜¤ë¥¸ìª½ìœ„ ì§ê° ì‚¼ê°í˜• ë~~! ì§„ì§œì‰½ì£ ìž‰");
 	}
 	
-	//¿À¸¥ÂÊ À§°¡ Á÷°¢ÀÎ »ï°¢Çü ¸¸µé±â
+	//ì˜¤ë¥¸ìª½ ìœ„ê°€ ì§ê°ì¸ ì‚¼ê°í˜• ë§Œë“¤ê¸°
 	private static void triangleRU(int n) {
 		for(int i=0; i<n; i++) {
 			for(int k=0;k<i;k++) {

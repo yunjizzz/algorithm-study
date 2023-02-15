@@ -6,7 +6,7 @@ public static void main(String[] args) {
 		int[][] arr1 = {{2, 3, 2}, {4, 2, 4}, {3, 1, 4}};
 		int[][] arr2 = {{5, 4, 3}, {2, 4, 1}, {3, 1, 1}};
 		
-		System.out.print("´äÀº" + solution(arr1,arr2));
+		System.out.print("ë‹µì€" + solution(arr1,arr2));
 		
 		
 		int[][] result =solution(arr1,arr2);

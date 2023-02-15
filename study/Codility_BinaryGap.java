@@ -1,7 +1,7 @@
 package study;
 
 /*
-¹®Á¦ ¼³¸í
+ë¬¸ì œ ì„¤ëª…
 A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones at both ends in the binary representation of N.
 
 For example, number 9 has binary representation 1001 and contains a binary gap of length 2. 
@@ -24,7 +24,7 @@ Write an efficient algorithm for the following assumptions:
 N is an integer within the range [1..2,147,483,647].
 */
 
-// ¹®Á¦ Ç¬°Å Áı¿¡ÀÖ³ß........¿Ö Ç¬ ÄÚµå »çÀÌÆ®¿¡¼­  ¸øº¸´Â°Å¾ß..
+// ë¬¸ì œ í‘¼ê±° ì§‘ì—ìˆë„¹........ì™œ í‘¼ ì½”ë“œ ì‚¬ì´íŠ¸ì—ì„œ  ëª»ë³´ëŠ”ê±°ì•¼..
 public class Codility_BinaryGap {
 
 	public void solution() {

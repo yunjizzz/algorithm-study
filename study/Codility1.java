@@ -12,7 +12,7 @@ public class Codility1 {
 
 		System.out.println(result);
 	}
-		//������ ������.........�� Ǯ�̸�����.. ������....�� �ٽ�Ǯ�� �̰�
+		//占쏙옙占쏙옙占쏙옙 占쏙옙占쏙옙占쏙옙.........占쏙옙 풀占싱몌옙占쏙옙占쏙옙.. 占쏙옙占쏙옙占쏙옙....占쏙옙 占쌕쏙옙풀占쏙옙 占싱곤옙
 	    public static int solution(String N) {
 	    	int end = 0 ,start =0;
 	    	int b =0 , a=0;

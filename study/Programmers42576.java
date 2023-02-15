@@ -6,35 +6,35 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /*
- * ¿ÏÁÖÇÏÁö ¸øÇÑ ¼±¼ö
+ * ì™„ì£¼í•˜ì§€ ëª»í•œ ì„ ìˆ˜
  * 
-¹®Á¦ ¼³¸í
-¼ö¸¹Àº ¸¶¶óÅæ ¼±¼öµéÀÌ ¸¶¶óÅæ¿¡ Âü¿©ÇÏ¿´½À´Ï´Ù. ´Ü ÇÑ ¸íÀÇ ¼±¼ö¸¦ Á¦¿ÜÇÏ°í´Â ¸ðµç ¼±¼ö°¡ ¸¶¶óÅæÀ» ¿ÏÁÖÇÏ¿´½À´Ï´Ù.
+ë¬¸ì œ ì„¤ëª…
+ìˆ˜ë§Žì€ ë§ˆë¼í†¤ ì„ ìˆ˜ë“¤ì´ ë§ˆë¼í†¤ì— ì°¸ì—¬í•˜ì˜€ìŠµë‹ˆë‹¤. ë‹¨ í•œ ëª…ì˜ ì„ ìˆ˜ë¥¼ ì œì™¸í•˜ê³ ëŠ” ëª¨ë“  ì„ ìˆ˜ê°€ ë§ˆë¼í†¤ì„ ì™„ì£¼í•˜ì˜€ìŠµë‹ˆë‹¤.
 
-¸¶¶óÅæ¿¡ Âü¿©ÇÑ ¼±¼öµéÀÇ ÀÌ¸§ÀÌ ´ã±ä ¹è¿­ participant¿Í ¿ÏÁÖÇÑ ¼±¼öµéÀÇ ÀÌ¸§ÀÌ ´ã±ä ¹è¿­ completionÀÌ ÁÖ¾îÁú ¶§, ¿ÏÁÖÇÏÁö ¸øÇÑ ¼±¼öÀÇ ÀÌ¸§À» return ÇÏµµ·Ï solution ÇÔ¼ö¸¦ ÀÛ¼ºÇØÁÖ¼¼¿ä.
+ë§ˆë¼í†¤ì— ì°¸ì—¬í•œ ì„ ìˆ˜ë“¤ì˜ ì´ë¦„ì´ ë‹´ê¸´ ë°°ì—´ participantì™€ ì™„ì£¼í•œ ì„ ìˆ˜ë“¤ì˜ ì´ë¦„ì´ ë‹´ê¸´ ë°°ì—´ completionì´ ì£¼ì–´ì§ˆ ë•Œ, ì™„ì£¼í•˜ì§€ ëª»í•œ ì„ ìˆ˜ì˜ ì´ë¦„ì„ return í•˜ë„ë¡ solution í•¨ìˆ˜ë¥¼ ìž‘ì„±í•´ì£¼ì„¸ìš”.
 
-Á¦ÇÑ»çÇ×
-¸¶¶óÅæ °æ±â¿¡ Âü¿©ÇÑ ¼±¼öÀÇ ¼ö´Â 1¸í ÀÌ»ó 100,000¸í ÀÌÇÏÀÔ´Ï´Ù.
-completionÀÇ ±æÀÌ´Â participantÀÇ ±æÀÌº¸´Ù 1 ÀÛ½À´Ï´Ù.
-Âü°¡ÀÚÀÇ ÀÌ¸§Àº 1°³ ÀÌ»ó 20°³ ÀÌÇÏÀÇ ¾ËÆÄºª ¼Ò¹®ÀÚ·Î ÀÌ·ç¾îÁ® ÀÖ½À´Ï´Ù.
-Âü°¡ÀÚ Áß¿¡´Â µ¿¸íÀÌÀÎÀÌ ÀÖÀ» ¼ö ÀÖ½À´Ï´Ù.
-ÀÔÃâ·Â ¿¹
+ì œí•œì‚¬í•­
+ë§ˆë¼í†¤ ê²½ê¸°ì— ì°¸ì—¬í•œ ì„ ìˆ˜ì˜ ìˆ˜ëŠ” 1ëª… ì´ìƒ 100,000ëª… ì´í•˜ìž…ë‹ˆë‹¤.
+completionì˜ ê¸¸ì´ëŠ” participantì˜ ê¸¸ì´ë³´ë‹¤ 1 ìž‘ìŠµë‹ˆë‹¤.
+ì°¸ê°€ìžì˜ ì´ë¦„ì€ 1ê°œ ì´ìƒ 20ê°œ ì´í•˜ì˜ ì•ŒíŒŒë²³ ì†Œë¬¸ìžë¡œ ì´ë£¨ì–´ì ¸ ìžˆìŠµë‹ˆë‹¤.
+ì°¸ê°€ìž ì¤‘ì—ëŠ” ë™ëª…ì´ì¸ì´ ìžˆì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
+ìž…ì¶œë ¥ ì˜ˆ
 participant	completion	return
 [leo, kiki, eden]	[eden, kiki]	leo
 [marina, josipa, nikola, vinko, filipa]	[josipa, filipa, marina, nikola]	vinko
 [mislav, stanko, mislav, ana]	[stanko, ana, mislav]	mislav
-ÀÔÃâ·Â ¿¹ ¼³¸í
-¿¹Á¦ #1
-leo´Â Âü¿©ÀÚ ¸í´Ü¿¡´Â ÀÖÁö¸¸, ¿ÏÁÖÀÚ ¸í´Ü¿¡´Â ¾ø±â ¶§¹®¿¡ ¿ÏÁÖÇÏÁö ¸øÇß½À´Ï´Ù.
+ìž…ì¶œë ¥ ì˜ˆ ì„¤ëª…
+ì˜ˆì œ #1
+leoëŠ” ì°¸ì—¬ìž ëª…ë‹¨ì—ëŠ” ìžˆì§€ë§Œ, ì™„ì£¼ìž ëª…ë‹¨ì—ëŠ” ì—†ê¸° ë•Œë¬¸ì— ì™„ì£¼í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤.
 
-¿¹Á¦ #2
-vinko´Â Âü¿©ÀÚ ¸í´Ü¿¡´Â ÀÖÁö¸¸, ¿ÏÁÖÀÚ ¸í´Ü¿¡´Â ¾ø±â ¶§¹®¿¡ ¿ÏÁÖÇÏÁö ¸øÇß½À´Ï´Ù.
+ì˜ˆì œ #2
+vinkoëŠ” ì°¸ì—¬ìž ëª…ë‹¨ì—ëŠ” ìžˆì§€ë§Œ, ì™„ì£¼ìž ëª…ë‹¨ì—ëŠ” ì—†ê¸° ë•Œë¬¸ì— ì™„ì£¼í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤.
 
-¿¹Á¦ #3
-mislav´Â Âü¿©ÀÚ ¸í´Ü¿¡´Â µÎ ¸íÀÌ ÀÖÁö¸¸, ¿ÏÁÖÀÚ ¸í´Ü¿¡´Â ÇÑ ¸í¹Û¿¡ ¾ø±â ¶§¹®¿¡ ÇÑ¸íÀº ¿ÏÁÖÇÏÁö ¸øÇß½À´Ï´Ù.
+ì˜ˆì œ #3
+mislavëŠ” ì°¸ì—¬ìž ëª…ë‹¨ì—ëŠ” ë‘ ëª…ì´ ìžˆì§€ë§Œ, ì™„ì£¼ìž ëª…ë‹¨ì—ëŠ” í•œ ëª…ë°–ì— ì—†ê¸° ë•Œë¬¸ì— í•œëª…ì€ ì™„ì£¼í•˜ì§€ ëª»í–ˆìŠµë‹ˆë‹¤.
 */
 
-//ÇØ½Ã¸¦ ÀÌ¿ëÇÑ ¾Ë°í¸®Áò
+//í•´ì‹œë¥¼ ì´ìš©í•œ ì•Œê³ ë¦¬ì¦˜
 public class Programmers42576 {
 
 	 public String solution(String[] attendList, String[] successList) {

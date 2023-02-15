@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class BasicAlgorithm16 {
 	
 	/*	
-	 * Á÷°¢ ÀÌµîº¯ »ï°¢Çü Ãâ·Â
-	 * ÀÌÁß·çÇÁ ÀÀ¿ë
-	 * ¿ŞÂÊ¾Æ·¡°¡ Á÷°¢ÀÎ ÀÌµîº¯ »ï°¢ÇüÀ» Ãâ·ÂÇÕ´Ï´Ù.
-	 * ¿¹½Ã ) 5
+	 * ì§ê° ì´ë“±ë³€ ì‚¼ê°í˜• ì¶œë ¥
+	 * ì´ì¤‘ë£¨í”„ ì‘ìš©
+	 * ì™¼ìª½ì•„ë˜ê°€ ì§ê°ì¸ ì´ë“±ë³€ ì‚¼ê°í˜•ì„ ì¶œë ¥í•©ë‹ˆë‹¤.
+	 * ì˜ˆì‹œ ) 5
 	 * *
 	 * **
 	 * ***
@@ -20,9 +20,9 @@ public class BasicAlgorithm16 {
 		Scanner in =new Scanner(System.in);
 		
 		int a;
-		System.out.println("Á÷°¢»ï°¢Çü º°Âï±â ½ÃÀÛ");
+		System.out.println("ì§ê°ì‚¼ê°í˜• ë³„ì°ê¸° ì‹œì‘");
 		do {
-			System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä!~");
+			System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”!~");
 			a = in.nextInt();
 			
 		}while(a <0);
@@ -35,6 +35,6 @@ public class BasicAlgorithm16 {
 			System.out.println();
 		}	
 		
-		System.out.println("Á÷°¢ »ï°¢Çü ³¡~~! ÁøÂ¥½±ÁÒÀ×");
+		System.out.println("ì§ê° ì‚¼ê°í˜• ë~~! ì§„ì§œì‰½ì£ ì‰");
 	}
 }

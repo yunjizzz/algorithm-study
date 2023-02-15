@@ -3,18 +3,18 @@ package basic_algorithm;
 public class BasicAlgorithm13 {
 	
 	/*	
-	 * ´ÙÁß ·çÇÁ!!
-	 * Á¦ÀÏÁ¦ÀÏ ÃÊÃÊÃÊÃÊÃÊÃÊ±âÃÊ ¹®Á¦
-	 * °ö¼À½ÄÀ» ¸¸µå½Ã¿À.
-	 * °ö¼ÀÇ¥ ÀÀ¿ëÇÏ±â~
-	 * À§¿¡ ¿·¿¡ ±¸ºÐ¼±°ú °öÇÏ´Â ¼ö°¡ ÀÖ´Â °ö¼ÀÇ¥¸¦ ¸¸µå½Ã¿À.
+	 * ë‹¤ì¤‘ ë£¨í”„!!
+	 * ì œì¼ì œì¼ ì´ˆì´ˆì´ˆì´ˆì´ˆì´ˆê¸°ì´ˆ ë¬¸ì œ
+	 * ê³±ì…ˆì‹ì„ ë§Œë“œì‹œì˜¤.
+	 * ê³±ì…ˆí‘œ ì‘ìš©í•˜ê¸°~
+	 * ìœ„ì— ì˜†ì— êµ¬ë¶„ì„ ê³¼ ê³±í•˜ëŠ” ìˆ˜ê°€ ìžˆëŠ” ê³±ì…ˆí‘œë¥¼ ë§Œë“œì‹œì˜¤.
 	 * 
-	 * ³ª´Â Çò°¥·È´Ù ¹Ùº¸´Ù..
+	 * ë‚˜ëŠ” í—·ê°ˆë ¸ë‹¤ ë°”ë³´ë‹¤..
 	 * 
 	 */
 	public static void main(String[] args) {
 		
-		System.out.println("°ö¼ÀÇ¥ ½ÃÀÌÀÌÀÛ");
+		System.out.println("ê³±ì…ˆí‘œ ì‹œì´ì´ìž‘");
 		
 		System.out.printf("   | ");
 		for (int i = 1; i <= 9; i++) {
@@ -30,7 +30,7 @@ public class BasicAlgorithm13 {
 			}
 			System.out.println();
 		}	
-		System.out.println("°ö¼ÀÇ¥ ²ôÀ¸À¸À¿!!! ÁøÂ¥½±ÁÒÀ×");
+		System.out.println("ê³±ì…ˆí‘œ ë„ìœ¼ìœ¼ì!!! ì§„ì§œì‰½ì£ ìž‰");
 	}
 	
 

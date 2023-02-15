@@ -3,16 +3,16 @@ package basic_algorithm;
 public class BasicAlgorithm14 {
 	
 	/*	
-	 * ´ÙÁß ·çÇÁ!!
-	 * Á¦ÀÏÁ¦ÀÏ ÃÊÃÊÃÊÃÊÃÊÃÊ±âÃÊ ¹®Á¦
-	 * µ¡¼À½ÄÀ» ¸¸µå½Ã¿À.
-	 * °ö¼ÀÇ¥ ÀÀ¿ëÇÏ±â~
-	 * À§¿¡ ¿·¿¡ ±¸ºÐ¼±°ú ´õÇÏ´Â¼ö°¡ ÀÖ´Â µ¡¼ÀÇ¥¸¦ ¸¸µå½Ã¿À.
+	 * ë‹¤ì¤‘ ë£¨í”„!!
+	 * ì œì¼ì œì¼ ì´ˆì´ˆì´ˆì´ˆì´ˆì´ˆê¸°ì´ˆ ë¬¸ì œ
+	 * ë§ì…ˆì‹ì„ ë§Œë“œì‹œì˜¤.
+	 * ê³±ì…ˆí‘œ ì‘ìš©í•˜ê¸°~
+	 * ìœ„ì— ì˜†ì— êµ¬ë¶„ì„ ê³¼ ë”í•˜ëŠ”ìˆ˜ê°€ ìžˆëŠ” ë§ì…ˆí‘œë¥¼ ë§Œë“œì‹œì˜¤.
 	 * 
 	 */
 	public static void main(String[] args) {
 		
-		System.out.println("µ¡¼ÀÇ¥ ½ÃÀÌÀÌÀÛ");
+		System.out.println("ë§ì…ˆí‘œ ì‹œì´ì´ìž‘");
 		
 		System.out.printf("   | ");
 		for (int i = 1; i <= 9; i++) {
@@ -28,7 +28,7 @@ public class BasicAlgorithm14 {
 			}
 			System.out.println();
 		}	
-		System.out.println("µ¡¼ÀÇ¥ ²ôÀ¸À¸À¿!!! ÁøÂ¥½±ÁÒÀ×");
+		System.out.println("ë§ì…ˆí‘œ ë„ìœ¼ìœ¼ì!!! ì§„ì§œì‰½ì£ ìž‰");
 	}
 	
 

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BasicAlgorithm11 {
 
 	/*
-	 * 2ÀÚ¸®ÀÇ ¾ç¼ö¸¦ ÀÔ·Â¹Ş½À´Ï´Ù.(10~99) 1ÀÚ¸®³ª 3ÀÚ¸®´Â Ãâ·ÂÇÏÁö¾Ê½À´Ï´Ù.
+	 * 2ìë¦¬ì˜ ì–‘ìˆ˜ë¥¼ ì…ë ¥ë°›ìŠµë‹ˆë‹¤.(10~99) 1ìë¦¬ë‚˜ 3ìë¦¬ëŠ” ì¶œë ¥í•˜ì§€ì•ŠìŠµë‹ˆë‹¤.
 	 * 
 	 */
 	public static void main(String[] args) {
@@ -14,12 +14,12 @@ public class BasicAlgorithm11 {
 		int a;
 
 		do {
-			System.out.println("¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println("ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 			a = in.nextInt();
 
 		} while (a < 10 || a > 99);
 
-		System.out.println("ÀÔ·ÂÇÑ ¼ö´Â " + a + "ÀÔ´Ï´Ù.");
+		System.out.println("ì…ë ¥í•œ ìˆ˜ëŠ” " + a + "ì…ë‹ˆë‹¤.");
 	}
 
 }

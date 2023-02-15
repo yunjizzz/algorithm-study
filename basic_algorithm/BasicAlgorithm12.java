@@ -3,15 +3,15 @@ package basic_algorithm;
 public class BasicAlgorithm12 {
 	
 	/*	
-	 * ´ÙÁß ·çÇÁ!!
-	 * Á¦ÀÏÁ¦ÀÏ ÃÊÃÊÃÊÃÊÃÊÃÊ±âÃÊ ¹®Á¦
-	 * °ö¼À½ÄÀ» ¸¸µå½Ã¿À.
-	 * ±¸±¸´Ù¾È~
+	 * ë‹¤ì¤‘ ë£¨í”„!!
+	 * ì œì¼ì œì¼ ì´ˆì´ˆì´ˆì´ˆì´ˆì´ˆê¸°ì´ˆ ë¬¸ì œ
+	 * ê³±ì…ˆì‹ì„ ë§Œë“œì‹œì˜¤.
+	 * êµ¬êµ¬ë‹¤ì•ˆ~
 	 * 
 	 */
 	public static void main(String[] args) {
 		
-		System.out.println("°ö¼ÀÇ¥ ½ÃÀÌÀÌÀÛ");
+		System.out.println("ê³±ì…ˆí‘œ ì‹œì´ì´ì‘");
 		
 		for(int i=1; i<=9;i++) {
 			for(int j=1; j<=9; j++) {
@@ -19,7 +19,7 @@ public class BasicAlgorithm12 {
 			}
 			System.out.println();
 		}
-		System.out.println("°ö¼ÀÇ¥ ²ôÀ¸À¸À¿!!! ÁøÂ¥½±ÁÒÀ×");
+		System.out.println("ê³±ì…ˆí‘œ ë„ìœ¼ìœ¼ì!!! ì§„ì§œì‰½ì£ ì‰");
 	}
 	
 

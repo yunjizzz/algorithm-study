@@ -12,7 +12,7 @@ public class BasicAlgorithm5 {
 	}
 	
 /*	
- * 1-n±îÁöÀÇ Á¤¼öÀÇ ÇÕÀ» ±¸ÇÏ¿©¶ó
+ * 1-nê¹Œì§€ì˜ ì •ìˆ˜ì˜ í•©ì„ êµ¬í•˜ì—¬ë¼
  * 
 */	
 	public static int solution(int num) {

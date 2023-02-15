@@ -4,8 +4,8 @@ public class ArrayAlgorithm4 {
 
 	
 	/*
-	 ¸ğµç ¹è¿­ÀÇ ¿ä¼Ò¸¦ ´õÇÏ´Â ¸Ş¼Òµå¸¦ ÀÛ¼ºÇÏ¶ó!!
-	 1+2+3+4+5 ÀÌ·±¼ø¼­·Î
+	 ëª¨ë“  ë°°ì—´ì˜ ìš”ì†Œë¥¼ ë”í•˜ëŠ” ë©”ì†Œë“œë¥¼ ì‘ì„±í•˜ë¼!!
+	 1+2+3+4+5 ì´ëŸ°ìˆœì„œë¡œ
 	
 	*/
 	public static void main(String[] args) {
@@ -19,8 +19,8 @@ public class ArrayAlgorithm4 {
 	}
 	
 	
-	// ¸ğµç ¹è¿­¿ä¼Ò¸¦ ´õÇÏ¶ó
-	// ÃÊ~°£´Ü
+	// ëª¨ë“  ë°°ì—´ìš”ì†Œë¥¼ ë”í•˜ë¼
+	// ì´ˆ~ê°„ë‹¨
 	public static int solution(int[] arr) {
 		int rtn =0; 
 		

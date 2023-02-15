@@ -12,9 +12,9 @@ public class BasicAlgorithm6 {
 	}
 	
 /*	
- * °¡¿ì½ºÀÇ µ¡¼À°ø½ÄÀ» »ç¿ëÇÏ¿©
- * °¡¿ì½ºÀÇ µ¡¼À°ø½ÄÀº ³ªÀÇ ºí·Î±×¸¦ Âü°í ÇÏµµ·Ï!!
- * 1-n ±îÁöÀÇ ´õÇÑ°ªÀ» ±¸ÇÏ¿©¶ó.
+ * ê°€ìš°ìŠ¤ì˜ ë§ì…ˆê³µì‹ì„ ì‚¬ìš©í•˜ì—¬
+ * ê°€ìš°ìŠ¤ì˜ ë§ì…ˆê³µì‹ì€ ë‚˜ì˜ ë¸”ë¡œê·¸ë¥¼ ì°¸ê³  í•˜ë„ë¡!!
+ * 1-n ê¹Œì§€ì˜ ë”í•œê°’ì„ êµ¬í•˜ì—¬ë¼.
  * 
 */	
 	public static int solution(int num) {
