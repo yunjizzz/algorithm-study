@@ -2,7 +2,7 @@ package coding_test;
 
 import java.util.TreeSet;
 
-public class tving {
+public class Tving {
 
     public static void main(String[] args) {
         int[][] office = {{1, 0, 0, 0}, {0, 0, 0, 1}, {0, 0, 1, 0}, {0, 1, 1, 0}};

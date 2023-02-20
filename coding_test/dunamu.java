@@ -1,6 +1,6 @@
 package coding_test;
 
-public class dunamu {
+public class Dunamu {
 
 
     // 방향 동, 남, 서, 북

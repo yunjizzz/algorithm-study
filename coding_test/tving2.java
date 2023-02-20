@@ -3,7 +3,7 @@ package coding_test;
 import java.util.List;
 import java.util.TreeSet;
 
-public class tving2 {
+public class Tving2 {
 
     public static void main(String[] args) {
 
